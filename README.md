@@ -13,4 +13,6 @@ Pelajaran baru:
 
 5. Bisa menggunakan diffForHumans() pada data waktu untuk menunjukkan perbedaan waktu dengan saat ini
 
+6. Belajar menggunakan factory, dari php artisan make:factory dan faker. Note : untuk menggunakan factory model harus ada use HasFactory
+
 Semangat terus wok

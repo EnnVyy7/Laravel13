@@ -1,6 +1,7 @@
 <?php
 
 use App\Models\Post;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -17,18 +18,24 @@ Route::get('/', function () {
 
 
 // Get All
-Route::get('/blog', function () {
+Route::get('/post', function () {
     $posts = Post::all();
 
     return response()->json($posts);
 });
 
 // Get Detail 1 Data
-Route::get("/blog/{post:slug}", function (Post $post) {
-    return response()->json($post->);
+Route::get("/post/{post:slug}", function (Post $post) {
+    return response()->json($post);
 });
 
 // Get Waktu Dibuat menggunakan diffForHumans
-Route::get("/blog/{post:slug}/time", function (Post $post) {
+Route::get("/post/{post:slug}/time", function (Post $post) {
     return response()->json($post->created_at->diffForHumans());
+});
+
+Route::get('/user', function () {
+    $user = User::all();
+
+    return response()->json($user);
 });
