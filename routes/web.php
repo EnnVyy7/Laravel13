@@ -2,7 +2,6 @@
 
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-use WpOrg\Requests\Response;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,7 +23,7 @@ Route::get('/blog', function () {
 
 Route::get("/blog/{post:slug}", function (Post $post) {
     if (!$post) {
-        return Response()->json([
+        return response()->json([
             'status' => false,
             'message' => 'Data Tidak Ditemukan'
         ]);
