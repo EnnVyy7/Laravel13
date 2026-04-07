@@ -9,4 +9,8 @@ Pelajaran baru:
 
 3. Sekarang handler.php sudah di hapus dan digabung dalam bootstrap\app.php
 
+4. Bisa buat model dan migration sekaligus dengan php artisan make:model namaModel -m
+
+5. Bisa menggunakan diffForHumans() pada data waktu untuk menunjukkan perbedaan waktu dengan saat ini
+
 Semangat terus wok
