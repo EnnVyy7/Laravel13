@@ -15,4 +15,6 @@ Pelajaran baru:
 
 6. Belajar menggunakan factory, dari php artisan make:factory dan faker. Note : untuk menggunakan factory model harus ada use HasFactory
 
+7. Belajar Relationship hasMany = punya banyak, belongsTo = dimiliki oleh. Ezz deck (Besoknya lupa)
+
 Semangat terus wok
