@@ -23,6 +23,9 @@ class User extends Authenticatable
      *
      * @return array<string, string>
      */
+
+    protected $with = ['post'];
+
     protected function casts(): array
     {
         return [

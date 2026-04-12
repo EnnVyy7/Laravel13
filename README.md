@@ -17,4 +17,6 @@ Pelajaran baru:
 
 7. Belajar Relationship hasMany = punya banyak, belongsTo = dimiliki oleh. Ezz deck (Besoknya lupa)
 
+8. Belajar eager loading geys. Biar query datanya ngga banyak, eager loading menggunakan method with() pada model. misalnya Post::with('author')->get(); atau jika sudah di panggil maka $post->with('author')->get(). Selain itu eager loading juga bisa dilakukan di model dengan cara menambahkan protected $with = []; yang diisi method realationship yang ingin digunakan.
+
 Semangat terus wok
